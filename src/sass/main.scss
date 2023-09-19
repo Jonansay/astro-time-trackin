@@ -1,0 +1,223 @@
+.jeremy__card {
+  display: flex;
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.jeremy {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  z-index: 10;
+  height: 29rem;
+
+  width: 14rem;
+
+  @media (max-width: 600px) {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: auto;
+  }
+  &__report-for {
+    background-color: var(--blue);
+    height: 14.5rem;
+    border-radius: 1rem;
+    z-index: 0;
+    padding: 2rem;
+
+    @media (max-width: 600px) {
+      display: flex;
+      width: 100%;
+      height: fit-content;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2rem;
+    }
+  }
+
+  &__text_cont {
+    @media (max-width: 600px) {
+      width: 70%;
+      padding-left: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 1.5rem;
+      background-color: red;
+    }
+  }
+  &__desc {
+    color: var(--lightGray);
+    margin: 0;
+    margin-top: 2rem;
+
+    @media (max-width: 600px) {
+      width: 60%;
+    }
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+    font-weight: 300;
+
+    @media (max-width: 600px) {
+      width: 60%;
+    }
+  }
+
+  &__img {
+    width: 4.5rem;
+    border: 0.2rem solid #fff;
+    border-radius: 100%;
+
+    @media (max-width: 600px) {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+.options {
+  background-color: var(--darkBlue);
+  height: 8.5rem;
+  margin-top: -1rem;
+  padding: 2rem 2rem 1rem;
+  border-radius: 1rem;
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+  }
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .item {
+    width: 14rem;
+    height: 14rem;
+    list-style: none;
+    background-color: var(--lightRedWork);
+
+    border-radius: 1.2rem;
+    z-index: 10;
+
+    @media (max-width: 600px) {
+      width: 85%;
+      margin: auto;
+      padding: 0;
+      height: fit-content;
+    }
+
+    &__image_container {
+      height: 2rem;
+      position: relative;
+      z-index: -1;
+      overflow: hidden;
+    }
+    &__img {
+      position: absolute;
+      right: 1rem;
+      top: -0.7rem;
+      width: 4rem;
+    }
+
+    &__cont {
+      background-color: var(--darkBlue);
+      height: 10rem;
+      /* z-index: 1; */
+      border-radius: 1rem;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      line-height: 3rem;
+      position: relative;
+
+      @media (max-width: 600px) {
+        height: fit-content;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &__icon-elipsis {
+      width: 1rem;
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+    }
+
+    &__subject {
+      color: #fff;
+      margin: 0;
+
+      @media (max-width: 600px){
+        font-weight: 600;
+      }
+    }
+  }
+
+  .item__work {
+    background-color: var(--lightRedWork);
+  }
+  .item__play {
+    background-color: var(--softBluePlay);
+  }
+  .item__study {
+    background-color: var(--lightRedStudy);
+  }
+  .item__exercise {
+    background-color: var(--limeGreenExercise);
+  }
+  .item__social {
+    background-color: var(--violetSocial);
+  }
+  .item__self_care {
+    background-color: var(--softOrangeSelfCare);
+  }
+}
+
+.hours {
+  @media (max-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__time {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  &__last_week {
+    color: var(--lightGray);
+    margin: 0;
+  }
+}
