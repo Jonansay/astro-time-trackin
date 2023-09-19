@@ -1,0 +1,32 @@
+
+.jeremy__card{
+ 
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  .jeremy{
+    background-color: red;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: auto;
+
+
+    @media (min-width: 600px){
+       
+        flex-direction: column;
+        margin-top: 1rem;
+        z-index: 10;
+        height: 29rem;
+      
+        width: 14rem;
+    }
+  }
