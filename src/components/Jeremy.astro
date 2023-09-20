@@ -201,22 +201,36 @@ import "../sass/main.scss";
           monthly.classList.toggle("active", false);
           weekly.classList.toggle("active", false);
           daily.classList.toggle("active");
-          for (let i = 0; i  <= 5; i ++) {
-            subjectsArray[i ].innerHTML = data[i ].title;
-            arrayHoursText[i ].innerHTML =
-              data[i].timeframes.daily.current;
+          for (let i = 0; i <= 5; i++) {
+            subjectsArray[i].innerHTML = data[i].title;
+            arrayHoursText[i].innerHTML = data[i].timeframes.daily.current;
+            lastHoursArray[i].innerHTML = data[i].timeframes.daily.previous;
+          }
+        });
+
+        weekly.addEventListener("click", () => {
+          daily.classList.toggle("active", false);
+          monthly.classList.toggle("active", false);
+          weekly.classList.toggle("active");
+          for (let i = 0; i <= 5; i++) {
+            subjectsArray[i].innerHTML = data[i].title;
+            arrayHoursText[i].innerHTML = data[i].timeframes.weekly.current;
+            lastHoursArray[i].innerHTML = data[i].timeframes.weekly.previous;
+          }
+        });
+
+        monthly.addEventListener("click", () => {
+          daily.classList.toggle("active", false);
+          weekly.classList.toggle("active", false);
+          monthly.classList.toggle("active");
+          for (let i = 0; i <= 5; i++) {
+            subjectsArray[i].innerHTML = data[i].title;
+            arrayHoursText[i].innerHTML =
+            data[i].timeframes.monthly.current;
             lastHoursArray[i].innerHTML =
-              data[i].timeframes.daily.previous;
+            data[i].timeframes.monthly.previous;
           }
         });
       });
-
-    // daily.addEventListener("click", () =>{
-
-    // })
-
-    // ?/////////////////////////////////////////////////*css*/`
-    // escuchar evento click
-    //   ///////////////////////////////////////////////
   });
 </script>
