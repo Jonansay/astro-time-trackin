@@ -1,7 +1,7 @@
 ---
-// import '../sass/jeremy.scss'
+
 import "../sass/main.scss";
-// import '../js/main.js'
+// import "../js/main.js";
 ---
 
 <main class="jeremy__card">
@@ -185,9 +185,9 @@ import "../sass/main.scss";
 
     const subjectsArray = selecta(".item__subject");
 
-    const arrayHoursText = document.querySelectorAll(".hours__time");
+    const arrayHoursText = document.querySelectorAll(".text-hrs");
 
-    const lastHoursArray = document.querySelectorAll(".hours__last_week");
+    const lastHoursArray = document.querySelectorAll(".l-w-hours-span");
 
     const url = "../data.json";
     // let finalData = "";
@@ -225,10 +225,8 @@ import "../sass/main.scss";
           monthly.classList.toggle("active");
           for (let i = 0; i <= 5; i++) {
             subjectsArray[i].innerHTML = data[i].title;
-            arrayHoursText[i].innerHTML =
-            data[i].timeframes.monthly.current;
-            lastHoursArray[i].innerHTML =
-            data[i].timeframes.monthly.previous;
+            arrayHoursText[i].innerHTML = data[i].timeframes.monthly.current;
+            lastHoursArray[i].innerHTML = data[i].timeframes.monthly.previous;
           }
         });
       });

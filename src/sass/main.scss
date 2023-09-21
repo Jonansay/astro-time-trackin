@@ -17,7 +17,7 @@
   flex-direction: column;
   margin-top: 1rem;
   z-index: 10;
-  height: 29rem;
+  height: 20rem;
 
   width: 14rem;
 
@@ -103,9 +103,9 @@
 
 .options {
   background-color: var(--darkBlue);
-  height: 160px;
+  height: px;
   margin-top: -1rem;
-  padding: 2rem 2rem 1rem;
+  padding: 2rem 2rem 3rem;
   border-radius: 1rem;
   border-top-right-radius: 0rem;
   border-top-left-radius: 0rem;
@@ -115,11 +115,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: fit-content;
+    padding-top: 60px;
+    height:40px;
   }
 
   &__value {
-    color: var(--lightGray);
+    border-radius: 15px;
+    background: #1c204b;
+    color: #7078c9;
+    
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline:none;
 
     &:hover {
       color: #fff;
@@ -136,6 +146,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
+  row-gap: 6rem;
 
   @media (max-width: 600px) {
     width: 100%;
@@ -143,10 +154,11 @@
     flex-direction: column;
     justify-content: center;
     padding: 0;
+    row-gap: 1.5rem;
   }
 
   .item {
-    width:255px;
+    width: 255px;
     height: 160px;
     list-style: none;
     background-color: var(--lightRedWork);
@@ -176,8 +188,8 @@
 
     &__cont {
       background-color: var(--darkBlue);
-      height: 160px;
-     
+      height: 199px;
+
       border-radius: 1rem;
       padding: 1rem 2rem;
       display: flex;
@@ -246,10 +258,8 @@
     line-height: normal;
     margin: 0;
     @media (max-width: 600px) {
-     
       font-size: 32px;
       font-style: normal;
-    
     }
   }
 
