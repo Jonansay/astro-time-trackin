@@ -44,9 +44,9 @@ import "../sass/main.scss";
         <p class="item__subject">Subject</p>
 
         <div class="hours">
-          <p class="hours__time"><span class="text-hrs"></span>hrs</p>
+          <p class="hours__time"><span class="hours__text-hrs"></span>hrs</p>
           <p class="hours__last_week">
-            Last Week - <span class="l-w-hours-span"></span>hrs
+            Last Week - <span class="hours__l-w-hours-span"></span>hrs
           </p>
         </div>
       </div>
@@ -65,9 +65,9 @@ import "../sass/main.scss";
         <p class="item__subject">Subject</p>
 
         <div class="hours">
-          <p class="hours__time"><span class="text-hrs"></span>hrs</p>
+          <p class="hours__time"><span class="hours__text-hrs"></span>hrs</p>
           <p class="hours__last_week">
-            Last Week - <span class="l-w-hours-span"></span>hrs
+            Last Week - <span class="hours__l-w-hours-span"></span>hrs
           </p>
         </div>
       </div>
@@ -87,9 +87,9 @@ import "../sass/main.scss";
         <p class="item__subject">Subject</p>
 
         <div class="hours">
-          <p class="hours__time"><span class="text-hrs"></span>hrs</p>
+          <p class="hours__time"><span class="hours__text-hrs"></span>hrs</p>
           <p class="hours__last_week">
-            Last Week - <span class="l-w-hours-span"></span>hrs
+            Last Week - <span class="hours__l-w-hours-span"></span>hrs
           </p>
         </div>
       </div>
@@ -113,9 +113,9 @@ import "../sass/main.scss";
         <p class="item__subject">Subject</p>
 
         <div class="hours">
-          <p class="hours__time"><span class="text-hrs"></span>hrs</p>
+          <p class="hours__time"><span class="hours__text-hrs"></span>hrs</p>
           <p class="hours__last_week">
-            Last Week - <span class="l-w-hours-span"></span>hrs
+            Last Week - <span class="hours__l-w-hours-span"></span>hrs
           </p>
         </div>
       </div>
@@ -136,9 +136,9 @@ import "../sass/main.scss";
         />
         <p class="item__subject">Subject</p>
         <div class="hours">
-          <p class="hours__time"><span class="text-hrs"></span>hrs</p>
+          <p class="hours__time"><span class="hours__text-hrs"></span>hrs</p>
           <p class="hours__last_week">
-            Last Week - <span class="l-w-hours-span"></span>hrs
+            Last Week - <span class="hours__l-w-hours-span"></span>hrs
           </p>
         </div>
       </div>
@@ -159,9 +159,9 @@ import "../sass/main.scss";
         />
         <p class="item__subject">Subject</p>
         <div class="hours">
-          <p class="hours__time"><span class="text-hrs"></span>hrs</p>
+          <p class="hours__time"><span class="hours__text-hrs"></span>hrs</p>
           <p class="hours__last_week">
-            Last Week - <span class="l-w-hours-span"></span>hrs
+            Last Week - <span class="hours__l-w-hours-span"></span>hrs
           </p>
         </div>
       </div>
@@ -189,9 +189,10 @@ import "../sass/main.scss";
 
     const subjectsArray = selecta(".item__subject");
 
-    const arrayHoursText = document.querySelectorAll(".text-hrs");
+    const arrayHoursText = document.querySelectorAll(".hours__text-hrs");
+    console.log(arrayHoursText)
 
-    const lastHoursArray = document.querySelectorAll(".l-w-hours-span");
+    const lastHoursArray = document.querySelectorAll(".hours__l-w-hours-span");
 
     const url = "../data.json";
     // let finalData = "";
