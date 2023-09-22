@@ -1,0 +1,18 @@
+.jeremy__card {
+  width: 100%;
+  max-width: 1440px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+
+  background-color: red;
+ 
+
+  
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
