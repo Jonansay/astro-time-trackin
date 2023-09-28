@@ -154,10 +154,7 @@
   }
 }
 
-// ************************************************************
 
-// items
-// **************************************************************
 
 .items {
   width: 100%;
@@ -260,25 +257,29 @@
   }
 
 
-  .item__work:nth-child(1) {
+  .item__work{
     background-color: var(--lightRedWork);
 
   }
-  .item__work:nth-child(2) {
+
+  .item__play{
     background-color: var(--softBluePlay);
+
   }
-  .item__work:nth-child(3) {
+  .item__study{
     background-color: var(--lightRedStudy);
+
   }
-  .item__work:nth-child(4) {
+  .item__exercise{
     background-color: var(--limeGreenExercise);
   }
-  .item__work:nth-child(5) {
-    background-color: var(--violetSocial);
-  }
-  .item__work:nth-child(6) {
-    background-color: var(--softOrangeSelfCare);
-  }
+ .item__social{
+  background-color: var(--violetSocial);
+
+ }
+ .item__self-care{
+  background-color: var(--softOrangeSelfCare);
+ }
 
 }
 
@@ -302,7 +303,7 @@
   }
 
   &__last_week {
-    color: #cbffbb;
+    color: #BBC0FF;
 
     font-family: Rubik;
     font-size: 15px;
