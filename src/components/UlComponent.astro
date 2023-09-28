@@ -1,0 +1,23 @@
+---
+import features from '../../data.json';
+import Lista from './Lista.astro';
+
+import "../sass/prueba.scss";
+
+
+
+---
+<ul class="items">
+  {
+    features.map((appData) => {
+      return (
+        <Lista
+        name={appData.title}
+     
+         
+      
+        />
+      );
+    })
+  }
+</ul>

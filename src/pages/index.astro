@@ -1,15 +1,22 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Jeremy from '../components/Jeremy.astro'
-import '../sass/variables.scss'
-import '../sass/style.scss'
+import Layout from "../layouts/Layout.astro";
+import JeremyCard from "../components/JeremyCard.astro";
+import Options from "../components/Options.astro";
+import UI from "../components/UlComponent.astro";
 
 
+import "../sass/variables.scss";
+import "../sass/style.scss";
+import { imageConfig } from "astro:assets";
 ---
 
 <Layout title="Time Tracking">
-	<Jeremy></Jeremy>
+  <main class="jeremy__card">
+    <div class="jeremy">
+      <JeremyCard />
+      <Options />
+    </div>
 
+    <UI />
+  </main>
 </Layout>
-
-

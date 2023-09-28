@@ -195,9 +195,7 @@
 
     border-radius: 15px;
     z-index: 10;
-    // margin-left: auto;
-    // margin-right: auto;
-    //     height: fit-content;
+  
 
     @media (min-width: 768px) {
       max-width: 255px;
@@ -261,24 +259,27 @@
     }
   }
 
-  .item__work {
+
+  .item__work:nth-child(1) {
     background-color: var(--lightRedWork);
+
   }
-  .item__play {
+  .item__work:nth-child(2) {
     background-color: var(--softBluePlay);
   }
-  .item__study {
+  .item__work:nth-child(3) {
     background-color: var(--lightRedStudy);
   }
-  .item__exercise {
+  .item__work:nth-child(4) {
     background-color: var(--limeGreenExercise);
   }
-  .item__social {
+  .item__work:nth-child(5) {
     background-color: var(--violetSocial);
   }
-  .item__self_care {
+  .item__work:nth-child(6) {
     background-color: var(--softOrangeSelfCare);
   }
+
 }
 
 .hours {
@@ -301,7 +302,7 @@
   }
 
   &__last_week {
-    color: #bbc0ff;
+    color: #cbffbb;
 
     font-family: Rubik;
     font-size: 15px;

@@ -1,0 +1,46 @@
+---
+
+import "../sass/prueba.scss";
+
+export interface Props {
+  name?: string;
+
+  image?: string;
+  classList?: string
+  
+}
+
+const { name, image ,classList} = Astro.props;
+
+const formattedName = name.replace(/\s+/g, '-').toLowerCase()
+const imageSRC = `./images/icon-${formattedName}.svg` // icon-work, icon-excercise, 
+
+---
+
+<li class=`item item__${formattedName}`>
+ 
+  <div class="item__image_container">
+    <img src={imageSRC} class="item__img" alt="icon work " />
+  </div>
+  <div class="item__cont">
+    <img
+      id="uno"
+      src="./images/icon-ellipsis.svg"
+      class="item__icon-elipsis"
+      alt="icon ellipsis"
+    />
+   
+    <p class="item__subject">{name}</p>
+
+    <div class="hours">
+      <p class="hours__time">
+        <span class="hours__text-hrs"></span>
+         hrs
+      </p>
+      <p class="hours__last_week">
+        Last Week - <span class="hours__l-w-hours-span"></span>
+         hrs
+      </p>
+    </div>
+  </div>
+</li>
