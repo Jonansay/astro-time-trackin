@@ -1,0 +1,223 @@
+.jeremy__card {
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jeremy {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: auto;
+
+  @media (min-width: 600px) {
+    flex-direction: column;
+    margin-top: 1rem;
+    z-index: 10;
+    height: 29rem;
+    width: 14rem;
+  }
+  &__text_cont {
+    width: 70%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    width: 100%;
+    font-weight: 300;
+    color: #fff;
+
+    @media (min-width: 600px) {
+      font-size: 2rem;
+      margin: 0;
+    }
+  }
+
+  &__desc {
+    width: 60%;
+    color: var(--lightGray);
+
+    @media (min-width: 600px) {
+      margin: 0;
+      margin-top: 2rem;
+    }
+  }
+  &__img {
+    width: 70px;
+    height: 70px;
+    border: 0.2rem solid #fff;
+    border-radius: 100%;
+
+    @media (min-width: 600px) {
+      width: 4.5rem;
+    }
+  }
+  &__report-for {
+    background-color: var(--blue);
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    @media (min-width: 600px) {
+      height: 14.5rem;
+      border-radius: 1rem;
+      z-index: 0;
+      padding: 2rem;
+    }
+  }
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  background-color: var(--darkBlue);
+
+  @media (min-width: 600px) {
+    height: 8.5rem;
+    margin-top: -1rem;
+    padding: 2rem 2rem 1rem;
+    border-radius: 1rem;
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+  }
+  &__value {
+    color: var(--lightGray);
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+// **************************************
+// seccion items__container
+// ****************************************
+
+.items__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.item {
+  width: 85%;
+  margin: auto;
+  padding: 0;
+  height: fit-content;
+
+  @media (min-width: 600px) {
+    width: 14rem;
+    height: 14rem;
+    list-style: none;
+    background-color: var(--lightRedWork);
+
+    border-radius: 1.2rem;
+    z-index: 10;
+  }
+  &__image_container {
+    height: 2rem;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+  }
+  &__img {
+    position: absolute;
+    right: 1rem;
+    top: -0.7rem;
+    width: 4rem;
+  }
+
+  &__cont {
+    height: fit-content;
+    background-color: var(--darkBlue);
+    border-radius: 1rem;
+    @media (min-width: 600px) {
+      height: 10rem;
+      padding: 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      line-height: 3rem;
+      position: relative;
+    }
+    &:hover {
+      background-color: var(--softViolet);
+      cursor: pointer;
+    }
+  }
+  &__icon-elipsis {
+    width: 1rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+
+  &__subject {
+    color: #fff;
+    margin: 0;
+  }
+}
+
+.hours {
+
+  display: flex;
+  justify-content: space-between;
+
+  &__time {
+    font-size: 2rem;
+    @media (min-width: 600px) {
+      color: #fff;
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+  &__last_week{
+    color: var(--lightGray);
+    margin: 0;
+  }
+}
+
+.item__work{
+    background-color: var(--lightRedWork);
+}
+.item__play{
+    background-color: var(--softBluePlay);
+}
+.item__study{
+    background-color: var(--lightRedStudy);
+}
+.item__exercise{
+    background-color: var(--limeGreenExercise);
+}
+.item__social{
+    background-color: var(--violetSocial);
+}
+.item__self_care{
+    background-color: var(--softOrangeSelfCare);
+
+}
+

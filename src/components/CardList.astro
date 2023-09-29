@@ -1,6 +1,6 @@
 ---
 import features from '../../data.json';
-import Lista from './Lista.astro';
+import Card from './Card.astro';
 
 import "../sass/prueba.scss";
 
@@ -11,7 +11,7 @@ import "../sass/prueba.scss";
   {
     features.map((appData) => {
       return (
-        <Lista
+        <Card
         name={appData.title}
      
          
